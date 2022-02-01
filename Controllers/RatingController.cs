@@ -33,6 +33,7 @@ namespace DezvoltareaAplicatiilorWeb.Controllers
             try
             {
                 await Task.Run(() => unitOfWork.Ratings.Add(rating));
+                await Task.Run(() => unitOfWork.Complete());
             }
             catch
             {

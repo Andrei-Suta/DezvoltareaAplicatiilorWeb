@@ -33,6 +33,7 @@ namespace DezvoltareaAplicatiilorWeb.Controllers
             try
             {
                 await Task.Run(() => unitOfWork.Movies.Add(movie));
+                await Task.Run(() => unitOfWork.Complete());
             }
             catch
             {

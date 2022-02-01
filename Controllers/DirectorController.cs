@@ -33,6 +33,7 @@ namespace DezvoltareaAplicatiilorWeb.Controllers
             try
             {
                 await Task.Run(() => unitOfWork.Directors.Add(director));
+                await Task.Run(() => unitOfWork.Complete());
             }
             catch
             {

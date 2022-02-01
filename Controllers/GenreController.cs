@@ -33,6 +33,7 @@ namespace DezvoltareaAplicatiilorWeb.Controllers
             try
             {
                 await Task.Run(() => unitOfWork.Genres.Add(genre));
+                await Task.Run(() => unitOfWork.Complete());
             }
             catch
             {

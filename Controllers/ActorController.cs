@@ -33,6 +33,7 @@ namespace DezvoltareaAplicatiilorWeb.Controllers
             try
             {
                 await Task.Run(() => unitOfWork.Actors.Add(actor));
+                await Task.Run(() => unitOfWork.Complete());
             }
             catch 
             {
