@@ -1,4 +1,4 @@
-# DezvoltareaAplicatiilorWeb
+# Movie API
 
 
 Pentru autentificare am folosit ASP.NET Core Identity, avand doua tipuri de useri: Administrator si User. Am adaugat autorizare pe endpoint-uri pentru ambele roluri.
